@@ -49,7 +49,7 @@ ConVar g_CvarEnabled("chestbump_patch_enabled", "0", FCVAR_CHEAT, "Enable or dis
 // Specifically the part where a cross product is compared against 14400f
 // .text:004CB51A	movss   xmm1, ds:dword_BB7504	---> this is where our value is stored
 // .text:004CB522	comiss  xmm1, xmm0
-// .text:004CB525   jb      loc_4CB808
+// .text:004CB525       jb      loc_4CB808
 // Jump to dword_BB7504...
 // 61 46 AC C5 27 B7 AC
 const char c_sPattern[] = "\x61\x46\xAC\xC5\x27\xB7\xAC";
